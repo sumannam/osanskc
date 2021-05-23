@@ -6,6 +6,13 @@ import pygetwindow as gw
 import time
 import mouse  
 
+
+# start /d "C:\Program Files\obs-studio\bin\64bit\" obs64.exe --startrecording --minimize-to-tray
+
+# to stop recording
+
+# taskkill /F /IM obs64.exe
+
 # while True:
 #     if mouse.is_pressed("left"):             # 마우스 왼쪽 클릭이면
 #         click += 1                             # 클릭 숫자 증가
@@ -16,17 +23,18 @@ import mouse
 
 
 # 2021년 5월 16일 수요예배 
-#chrome_path = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\"
+chrome_path = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\"
 youtube_live_url = "https://studio.youtube.com/video/Q6wkIP8xXyE/livestreaming"
 
 
-obs_command = 'start /d "C:\\Program Files\\obs-studio\\bin\\64bit\\obs64.exe"'
-os.system(obs_command)
+# obs_command = 'start /d "C:\\Program Files\\obs-studio\\bin\\64bit\\" obs64.exe'
+# print(obs_command)
+# os.system(obs_command)
 
-#webbrowser.open_new(youtube_live_url)
-# os.chdir(chrome_path)
-# chrome_command = "chrome " + youtube_live_url
-# os.system(chrome_command)
+webbrowser.open_new(youtube_live_url)
+os.chdir(chrome_path)
+chrome_command = "chrome " + youtube_live_url
+os.system(chrome_command)
 
 
 #time.sleep(2)
