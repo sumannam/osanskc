@@ -2,8 +2,8 @@ import os
 
 bible_path = "E:\\OneDrive\\1. 예배\\bible\\"
 
-long_bible = "아가 4:1-9"
-short_bible = "아4:1-9"
+long_bible = "시편 18:1-19"
+short_bible = "시18:1-19"
 
 long_book = long_bible.split(' ')[0]
 address = long_bible.split(' ')[1]

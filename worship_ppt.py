@@ -6,9 +6,7 @@ import shutil
 #주일 낮예배 순서 저장(content.py)
 from contents import *
 
-
-
-
+# 예배 폴더 생성
 def createFolder(directory):
     try:
         if not os.path.exists(directory):
@@ -16,7 +14,7 @@ def createFolder(directory):
     except OSError:
         print ('Error: Creating directory. ' +  directory)
 
-# 예배 폴더 생성
+# 예배 폴더 이름 생성
 def createTargetFolder():
     createFolder(today_ppt_path)
     target_ppt_path = today_ppt_path + "\\ppt"
@@ -50,6 +48,5 @@ def copyFiles(target_ppt_path):
     versicle_file_pptx = versicle_file + ".pptx"
     shutil.copy(versicle_ppt_path + "\\" + versicle_file_pptx, target_ppt_path + "\\" + versicle_file_pptx)
 
-target_ppt_path = createTargetFolder()
-copyFiles(target_ppt_path)
-
+# target_ppt_path = createTargetFolder()
+# copyFiles(target_ppt_path)
