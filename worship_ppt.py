@@ -45,8 +45,8 @@ def copyFiles(target_ppt_path):
     shutil.copy(hymn_ppt_path + "\\" + hymn_file_ppt6, target_ppt_path + "\\" + hymn_file_ppt6)
 
     # 교독문 파일 복사
-    versicle_file_pptx = versicle_file + ".pptx"
-    shutil.copy(versicle_ppt_path + "\\" + versicle_file_pptx, target_ppt_path + "\\" + versicle_file_pptx)
+    responsive_reading_file_pptx = responsive_reading + ".pptx"
+    shutil.copy(responsive_reading_ppt_path + "\\" + responsive_reading_file_pptx, target_ppt_path + "\\" + responsive_reading_file_pptx)
 
 # target_ppt_path = createTargetFolder()
 # copyFiles(target_ppt_path)
